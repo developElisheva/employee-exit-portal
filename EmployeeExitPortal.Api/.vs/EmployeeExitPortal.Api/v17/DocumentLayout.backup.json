@@ -1,0 +1,382 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\models\\exittask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\models\\exittask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\controllers\\exittaskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\controllers\\exittaskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\services\\exittaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\services\\exittaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\dto\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\dto\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\dto\\mytaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\dto\\mytaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\controllers\\exitformscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\controllers\\exitformscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\services\\exitformservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\services\\exitformservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\dto\\exitformdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\dto\\exitformdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\dto\\exittaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\dto\\exittaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\dto\\exitformcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\dto\\exitformcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\dto\\employeecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\dto\\employeecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\models\\exitform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\models\\exitform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\migrations\\20251214104825_makecommentsnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\migrations\\20251214104825_makecommentsnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|c:\\users\\elish\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\employeeexitportal.api\\employeeexitportal.api\\migrations\\20251214091819_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64286770-C143-4CA2-AA07-E551835AEA3B}|EmployeeExitPortal.Api\\EmployeeExitPortal.Api.csproj|solutionrelative:employeeexitportal.api\\migrations\\20251214091819_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1262,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Class.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\DTO\\Class.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\DTO\\Class.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\DTO\\Class.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\DTO\\Class.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:56:33.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExitFormsController.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Controllers\\ExitFormsController.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Controllers\\ExitFormsController.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Controllers\\ExitFormsController.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Controllers\\ExitFormsController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwBwAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:41:30.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExitFormService.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Services\\ExitFormService.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Services\\ExitFormService.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Services\\ExitFormService.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Services\\ExitFormService.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAkwF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:40:19.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:27:35.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Program.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Program.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:13:57.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExitTaskService.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Services\\ExitTaskService.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Services\\ExitTaskService.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Services\\ExitTaskService.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Services\\ExitTaskService.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAwGcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:43:16.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExitTasksController.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Controllers\\ExitTasksController.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Controllers\\ExitTasksController.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Controllers\\ExitTasksController.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Controllers\\ExitTasksController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswBwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T10:54:52.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExitTask.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Models\\ExitTask.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Models\\ExitTask.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Models\\ExitTask.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Models\\ExitTask.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:16:20.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20251214104825_MakeCommentsNullable.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Migrations\\20251214104825_MakeCommentsNullable.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Migrations\\20251214104825_MakeCommentsNullable.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Migrations\\20251214104825_MakeCommentsNullable.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Migrations\\20251214104825_MakeCommentsNullable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T10:48:25.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyTaskDto.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\DTO\\MyTaskDto.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\DTO\\MyTaskDto.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\DTO\\MyTaskDto.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\DTO\\MyTaskDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T10:53:09.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmployeeCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\DTO\\EmployeeCreateDto.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\DTO\\EmployeeCreateDto.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\DTO\\EmployeeCreateDto.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\DTO\\EmployeeCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:51:54.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ExitFormCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\DTO\\ExitFormCreateDto.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\DTO\\ExitFormCreateDto.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\DTO\\ExitFormCreateDto.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\DTO\\ExitFormCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:55:13.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ExitFormDto.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\DTO\\ExitFormDto.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\DTO\\ExitFormDto.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\DTO\\ExitFormDto.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\DTO\\ExitFormDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:55:49.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ExitTaskDto.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\DTO\\ExitTaskDto.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\DTO\\ExitTaskDto.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\DTO\\ExitTaskDto.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\DTO\\ExitTaskDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:56:33.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20251214091819_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Migrations\\20251214091819_InitialCreate.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Migrations\\20251214091819_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Migrations\\20251214091819_InitialCreate.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Migrations\\20251214091819_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:18:20.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Models\\User.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Models\\User.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Models\\User.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:16:58.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ExitForm.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Models\\ExitForm.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Models\\ExitForm.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Models\\ExitForm.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Models\\ExitForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:15:54.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Models\\Employee.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:15:24.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Services\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAkwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:33:12.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:12:16.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "EmployeeExitPortal.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\elish\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D8\u05D5\u05E4\u05E1 \u05D8\u05D9\u05D5\u05DC\u05D9\u05DD\\EmployeeExitPortal.Api\\EmployeeExitPortal.Api\\appsettings.json",
+              "RelativeToolTip": "EmployeeExitPortal.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-14T09:07:49.762Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1262,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

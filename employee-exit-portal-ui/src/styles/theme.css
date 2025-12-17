@@ -1,0 +1,169 @@
+/* Theme: clean professional RTL styles */
+.app-root {
+  direction: rtl;
+  display: flex;
+  flex-direction: row; /* sidebar appears before cards (left side) */
+  gap: 24px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.app-sidebar {
+  width: 280px;
+  flex: 0 0 280px;
+}
+
+.app-content {
+  flex: 1 1 auto;
+}
+.page-container {
+  direction: rtl;
+  padding: 8px 0 24px 0;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 8px 0 18px 0;
+  text-align: right;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e6eef6;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.card-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.card-date {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #eef3f8;
+  background: #fafafb;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.task-title {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.task-status {
+  font-weight: 700;
+}
+.task-status.pending { color: #ed6c02; }
+.task-status.approved { color: #2e7d32; }
+
+.task-note { color: #6b7280; font-size: 13px; }
+
+.actions { display:flex; gap:10px; align-items:center }
+
+.btn-primary {
+  background:#0f172a; color:#fff; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:700;
+}
+.btn-ghost { background:transparent; border:1px solid #e6eef6; padding:8px 12px; border-radius:8px; cursor:pointer }
+
+/* Sidebar / roles */
+.sidebar-title { font-size:18px; font-weight:700; margin-bottom:12px }
+.role-button { display:block; width:100%; text-align:center; padding:10px 12px; border-radius:8px; background:#f8fafc; border:1px solid transparent; margin-bottom:10px; cursor:pointer; font-weight:600 }
+.role-button.active { background:#0f172a; color:#fff }
+
+@media (max-width:900px){
+  .app-root{ flex-direction: column; padding:12px }
+  .app-sidebar{ width:100%; flex:0 0 auto }
+  .cards-grid{ grid-template-columns: 1fr }
+  .page-title{ text-align:center }
+}
+
+/* Header */
+.app-header {
+  width: 100%;
+  border-bottom: 1px solid #eef3f8;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  background: #fff;
+}
+.app-title {
+  font-size: 34px;
+  font-weight: 900;
+  color: #0f172a;
+  text-align: center;
+  letter-spacing: 0.2px;
+  margin: 6px 0;
+}
+
+@media (max-width:900px){
+  .app-title { font-size: 22px }
+}
+
+/* Dialog */
+.dialog-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.dialog {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  direction: rtl;
+}
+.dialog textarea {
+  width: 100%;
+  min-height: 80px;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #e6eef6;
+}
+.dialog-actions { margin-top: 15px; display:flex; gap:10px }
