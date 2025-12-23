@@ -1,0 +1,16 @@
+# Visual Studio קבצים זמניים של
+.vs/
+[Oo]bj/
+[Bb]in/
+*.user
+*.vsidx
+*.suo
+
+# Node.js (בשביל ה-UI)
+node_modules/
+dist/
+build/
+.env
+
+# קבצי מערכת
+.DS_Store

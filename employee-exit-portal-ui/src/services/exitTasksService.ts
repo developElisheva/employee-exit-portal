@@ -1,17 +1,5 @@
 import httpClient from "../api/httpClient";
-import type { ExitTasksGroup } from "../models/exitTasks";
-
-/* =======================
-   משימות לפי Role
-======================= */
-export async function getGroupedTasksByRole(
-  role: string
-): Promise<ExitTasksGroup[]> {
-  const response = await httpClient.get(
-    `/exittasks/grouped?role=${role}`
-  );
-  return response.data;
-}
+import type { ExitFormDetails } from "../models/exitForm";
 
 /* =======================
    אישור משימה (חתימה)
@@ -32,5 +20,11 @@ export async function approveTask(
 ======================= */
 export async function getRoles(): Promise<string[]> {
   const response = await httpClient.get("/exittasks/roles");
+  return response.data;
+}
+
+// New: fetch exit forms filtered for the current role (server reads role from JWT)
+export async function getExitFormsForRole(): Promise<ExitFormDetails[]> {
+  const response = await httpClient.get("/ExitForms/for-role");
   return response.data;
 }

@@ -1,48 +1,31 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using EmployeeExitPortal.Api.Services;
+﻿using EmployeeExitPortal.Api.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace EmployeeExitPortal.Api.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ExitTasksController : ControllerBase
     {
-        private readonly ExitTaskService _taskService;
+        private readonly ExitTaskService _service;
 
-        public ExitTasksController(ExitTaskService taskService)
+        public ExitTasksController(ExitTaskService service)
         {
-            _taskService = taskService;
+            _service = service;
         }
 
-        // 🔹 שליפת משימות מקובצות לפי Role
-        [HttpGet("grouped")]
-        public async Task<IActionResult> GetGroupedTasks([FromQuery] string role)
-        {
-            var tasks = await _taskService.GetGroupedTasksAsync(role);
-            return Ok(tasks);
-        }
-
-        // 🔹 שליפת כל התחומים (Roles) – דינמי מה־DB
-        [HttpGet("roles")]
-        public async Task<IActionResult> GetRoles()
-        {
-            var roles = await _taskService.GetAvailableRolesAsync();
-            return Ok(roles);
-        }
-
-        // 🔹 אישור משימה (חתימה)
         [HttpPost("{taskId}/approve")]
-        public async Task<IActionResult> ApproveTask(
+        public async Task<IActionResult> Approve(
             int taskId,
-            [FromQuery] string role,
-            [FromBody] string? comments)
+            [FromBody] string? comment)
         {
-            var success = await _taskService.ApproveTaskAsync(taskId, role, comments);
+            var userId = int.Parse(User.FindFirstValue("userId")!);
 
-            if (!success)
-                return BadRequest("Cannot approve task (invalid role or task not found)");
-
-            return Ok("Task approved successfully");
+            await _service.ApproveAsync(taskId, userId, comment);
+            return Ok();
         }
     }
 }

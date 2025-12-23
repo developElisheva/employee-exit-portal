@@ -1,26 +1,28 @@
-import type { ExitTasksGroup } from "../models/exitTasks";
+import type { ExitFormDetails } from "../models/exitForm";
 import TaskItem from "./TaskItem";
 // styles removed
 
 interface Props {
-  group: ExitTasksGroup;
+  form: ExitFormDetails;
   onSign: (taskId: number, comment: string) => void;
 }
 
-function TaskGroup({ group, onSign }: Props) {
+function TaskGroup({ form, onSign }: Props) {
+  const dateStr = form.endDate ?? (form as any).exitDate ?? '';
+
   return (
     <div className="card">
       <div className="card-header">
-        <div className="card-name">{group.employeeName}</div>
+        <div className="card-name">{form.employeeName}</div>
         <div className="card-date">
-          תאריך עזיבה: {new Date(group.exitDate).toLocaleDateString("he-IL")}
+          תאריך עזיבה: {dateStr ? new Date(dateStr).toLocaleDateString("he-IL") : '-'}
         </div>
       </div>
 
       <div className="tasks-list">
-        {group.tasks.map(task => (
+        {form.tasks.map(task => (
           <TaskItem
-            key={task.taskId}
+            key={(task as any).taskId ?? (task as any).id}
             task={task}
             onSign={onSign}
           />

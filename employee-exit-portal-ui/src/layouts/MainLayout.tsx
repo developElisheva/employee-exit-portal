@@ -1,12 +1,9 @@
 import type { ReactNode } from "react";
-// styles removed
-
 interface Props {
-  sidebar: ReactNode;
   children: ReactNode;
 }
 
-export default function MainLayout({ sidebar, children }: Props) {
+export default function MainLayout({ children }: Props) {
   return (
     <div>
       <header className="app-header">
@@ -14,8 +11,9 @@ export default function MainLayout({ sidebar, children }: Props) {
       </header>
 
       <div className="app-root">
-        <aside className="app-sidebar">{sidebar}</aside>
-        <main className="app-content">{children}</main>
+        <main className="app-content">
+          {children}
+        </main>
       </div>
     </div>
   );

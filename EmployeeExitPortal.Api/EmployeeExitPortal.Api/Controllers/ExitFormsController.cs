@@ -1,48 +1,56 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using EmployeeExitPortal.Api.Services;
-using EmployeeExitPortal.Api.DTOs;
+﻿using EmployeeExitPortal.Api.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace EmployeeExitPortal.Api.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ExitFormsController : ControllerBase
     {
-        private readonly ExitFormService _exitFormService;
-        private readonly ExitTaskService _taskService;
+        private readonly ExitFormService _service;
 
-        public ExitFormsController(ExitFormService exitFormService, ExitTaskService taskService)
+        public ExitFormsController(ExitFormService service)
         {
-            _exitFormService = exitFormService;
-            _taskService = taskService;
+            _service = service;
         }
 
-        // 1️⃣ יצירת טופס חדש לעובד
-        [HttpPost]
-        public async Task<IActionResult> CreateForm([FromBody] ExitFormCreateDto dto)
-        {
-            var form = await _exitFormService.CreateExitFormAsync(dto.EmployeeId, dto.ExitDate);
-            if (form == null)
-                return NotFound("Employee not found");
+        // =========================
+        // HR – רשימת טפסים
+        // =========================
+        [Authorize(Roles = "HR")]
+        [HttpGet("hr")]
+        public async Task<IActionResult> HrList()
+            => Ok(await _service.GetForHrAsync());
 
-            // יצירת משימות אוטומטיות לטופס
-            await _taskService.CreateTasksForExitFormAsync(form.Id);
-
-            // החזרה כ-DTO
-            var result = await _exitFormService.GetFormDtoAsync(form.Id);
-
-            return Ok(result);
-        }
-
-        // 2️⃣ שליפת טופס לפי ID
+        // =========================
+        // טופס בודד לפי הרשאות
+        // =========================
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetForm(int id)
+        public async Task<IActionResult> Details(int id)
         {
-            var form = await _exitFormService.GetFormDtoAsync(id);
-            if (form == null)
-                return NotFound();
+            var role = User.FindFirstValue(ClaimTypes.Role);
+            var department = User.FindFirstValue("department");
 
-            return Ok(form);
+            var result = await _service.GetDetailsAsync(id, role!, department);
+            return result == null ? NotFound() : Ok(result);
+        }
+
+        // =========================
+        // ⭐ טפסים עם המשימות שלי (לפי Department)
+        // =========================
+        [HttpGet("for-role")]
+        public async Task<IActionResult> GetForMyDepartment()
+        {
+            var department = User.FindFirstValue("department");
+
+            if (string.IsNullOrWhiteSpace(department))
+                return BadRequest("department claim is missing");
+
+            var result = await _service.GetForDepartmentAsync(department);
+            return Ok(result);
         }
     }
 }

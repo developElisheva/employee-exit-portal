@@ -1,27 +1,64 @@
 import { useEffect, useState } from "react";
-import { getRoles } from "./services/exitTasksService";
-import TasksPage from "./pages/TasksPage";
 import MainLayout from "./layouts/MainLayout";
-import RolesSidebar from "./components/RolesSidebar";
+import TasksPage from "./pages/TasksPage";
+import EmployeeStatusPage from "./pages/EmployeeStatusPage";
+import LoginPage from "./pages/LoginPage";
+import { getMe } from "./services/authService";
+import HrSummaryPage from "./pages/HrSummaryPage";
+
+interface User {
+  id: number;
+  displayName: string;
+  role: "HR" | "Signer" | "Viewer";
+  department?: string | null;
+}
 
 function App() {
-  const [roles, setRoles] = useState<string[]>([]);
-  const [activeRole, setActiveRole] = useState<string | null>(null);
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  const loadUser = async () => {
+    setLoading(true);
+    try {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        // No token: skip calling API (avoids 401 before login)
+        setUser(null);
+        return;
+      }
+
+      const me = await getMe();
+      setUser(me);
+    } catch {
+      setUser(null);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    getRoles().then(r => {
-      setRoles(r);
-      setActiveRole(r[0]);
-    });
+    loadUser();
   }, []);
 
-  return (
-    <MainLayout
-      sidebar={<RolesSidebar roles={roles} activeRole={activeRole} onSelect={(r) => setActiveRole(r)} />}
-    >
-      {activeRole && <TasksPage role={activeRole} />}
-    </MainLayout>
-  );
+  if (loading) return <p>טוען…</p>;
+
+  // 🔐 לא מחובר
+  if (!user) {
+    return <LoginPage onLoginSuccess={loadUser} />;
+  }
+
+  // 🧠 בחירת מסך לפי Role
+  let content;
+
+  if (user.role === "HR") {
+    content = <HrSummaryPage />;
+  } else if (user.role === "Signer") {
+    content = <TasksPage department={user.department!} />;
+  } else {
+    content = <EmployeeStatusPage />;
+  }
+
+  return <MainLayout>{content}</MainLayout>;
 }
 
 export default App;

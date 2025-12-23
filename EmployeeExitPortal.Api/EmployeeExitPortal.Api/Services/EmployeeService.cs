@@ -1,4 +1,5 @@
 ﻿using EmployeeExitPortal.Api.Data;
+using EmployeeExitPortal.Api.DTO;
 using EmployeeExitPortal.Api.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,44 +14,67 @@ namespace EmployeeExitPortal.Api.Services
             _context = context;
         }
 
-        public async Task<List<Employee>> GetAllAsync()
+        public async Task<List<EmployeeDto>> GetAllAsync()
         {
-            return await _context.Employees.ToListAsync();
+            return await _context.Employees
+                .Select(e => new EmployeeDto
+                {
+                    Id = e.Id,
+                    FullName = e.FullName,
+                    Tz = e.Tz,
+                    Unit = e.Unit
+                })
+                .ToListAsync();
         }
 
-        public async Task<Employee> GetByIdAsync(int id)
+        public async Task<EmployeeDto?> GetByIdAsync(int id)
         {
-            return await _context.Employees.FirstOrDefaultAsync(e => e.Id == id);
+            var e = await _context.Employees.FindAsync(id);
+            if (e == null) return null;
+
+            return new EmployeeDto
+            {
+                Id = e.Id,
+                FullName = e.FullName,
+                Tz = e.Tz,
+                Unit = e.Unit
+            };
         }
 
-        public async Task<Employee> CreateAsync(Employee employee)
+        public async Task<EmployeeDto> CreateAsync(EmployeeDto dto)
         {
-            _context.Employees.Add(employee);
+            var e = new Employee
+            {
+                FullName = dto.FullName,
+                Tz = dto.Tz,
+                Unit = dto.Unit
+            };
+
+            _context.Employees.Add(e);
             await _context.SaveChangesAsync();
-            return employee;
+
+            dto.Id = e.Id;
+            return dto;
         }
 
-        public async Task<Employee> UpdateAsync(int id, Employee updated)
+        public async Task UpdateAsync(int id, EmployeeDto dto)
         {
-            var employee = await _context.Employees.FindAsync(id);
-            if (employee == null) return null;
+            var e = await _context.Employees.FindAsync(id);
+            if (e == null) return;
 
-            employee.FullName = updated.FullName;
-            employee.Tz = updated.Tz;
-            employee.Unit = updated.Unit;
-
+            e.FullName = dto.FullName;
+            e.Tz = dto.Tz;
+            e.Unit = dto.Unit;
             await _context.SaveChangesAsync();
-            return employee;
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        public async Task DeleteAsync(int id)
         {
-            var employee = await _context.Employees.FindAsync(id);
-            if (employee == null) return false;
+            var e = await _context.Employees.FindAsync(id);
+            if (e == null) return;
 
-            _context.Employees.Remove(employee);
+            _context.Employees.Remove(e);
             await _context.SaveChangesAsync();
-            return true;
         }
     }
 }

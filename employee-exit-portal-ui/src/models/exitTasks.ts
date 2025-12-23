@@ -1,15 +1,4 @@
-export interface ExitTask {
-  taskId: number;
-  title: string;
-  responsibleRole: string;
-  status: string;
-  comments?: string;
-  approvedAt?: string | null;
-}
+// Deprecated: replaced by src/models/exitForm.ts (ExitFormDetails / ExitTaskDetails)
+// This file is intentionally left as a stub pending removal. Do not import.
 
-export interface ExitTasksGroup {
-  exitFormId: number;
-  employeeName: string;
-  exitDate: string;
-  tasks: ExitTask[];
-}
+export {};

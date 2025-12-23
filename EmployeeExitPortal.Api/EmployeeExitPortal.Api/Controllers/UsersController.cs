@@ -1,16 +1,17 @@
 ﻿using EmployeeExitPortal.Api.DTO;
 using EmployeeExitPortal.Api.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeExitPortal.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class EmployeesController : ControllerBase
+    public class UsersController : ControllerBase
     {
-        private readonly EmployeeService _service;
+        private readonly UsersService _service;
 
-        public EmployeesController(EmployeeService service)
+        public UsersController(UsersService service)
         {
             _service = service;
         }
@@ -22,16 +23,16 @@ namespace EmployeeExitPortal.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var employee = await _service.GetByIdAsync(id);
-            return employee == null ? NotFound() : Ok(employee);
+            var user = await _service.GetByIdAsync(id);
+            return user == null ? NotFound() : Ok(user);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(EmployeeDto dto)
+        public async Task<IActionResult> Create(UserDto dto)
             => Ok(await _service.CreateAsync(dto));
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, EmployeeDto dto)
+        public async Task<IActionResult> Update(int id, UserDto dto)
         {
             await _service.UpdateAsync(id, dto);
             return NoContent();
@@ -42,6 +43,22 @@ namespace EmployeeExitPortal.Api.Controllers
         {
             await _service.DeleteAsync(id);
             return NoContent();
+        }
+
+        [Authorize]
+        [HttpGet("me")]
+        public async Task<IActionResult> Me()
+        {
+            var user = await _service.GetCurrentUserAsync(User);
+            if (user == null) return Unauthorized();
+
+            return Ok(new
+            {
+                user.Id,
+                user.DisplayName,
+                user.Role,
+                user.Department
+            });
         }
     }
 }

@@ -103,6 +103,9 @@
 
 .actions { display:flex; gap:10px; align-items:center }
 
+.task-approved-info { color: #334155; font-size: 13px; margin-top: 4px }
+
+
 .btn-primary {
   background:#0f172a; color:#fff; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:700;
 }
@@ -167,3 +170,65 @@
   border: 1px solid #e6eef6;
 }
 .dialog-actions { margin-top: 15px; display:flex; gap:10px }
+
+/* Login page */
+.login-wrapper {
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 22px;
+  border: 1px solid #e6eef6;
+  box-shadow: 0 10px 30px rgba(15,23,42,0.06);
+}
+.form-title { font-size:20px; font-weight:800; margin-bottom:12px; text-align:right }
+.login-form .form-field { display:flex; flex-direction:column; gap:6px; margin-top:10px }
+.login-form label { font-weight:700; color:#0f172a }
+.input { width:100%; padding:10px 12px; border-radius:8px; border:1px solid #e6eef6; box-sizing:border-box }
+.login-form .btn-primary { width:100%; margin-top:16px }
+.error-text { color:#dc2626; margin-top:10px; font-weight:600 }
+
+@media (max-width:420px){
+  .login-card{ padding:16px }
+}
+
+/* Details page specific styles */
+.details-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #e6eef6;
+  box-shadow: 0 8px 20px rgba(15,23,42,0.04);
+}
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 36px;
+  align-items: start;
+}
+.details-label { color: #6b7280; font-size: 13px; margin-bottom: 6px }
+.details-value { font-size: 15px; color: #0f172a; margin-bottom: 10px }
+.details-section-title { font-size: 18px; font-weight: 800; margin-top: 8px; margin-bottom: 12px }
+
+.details-table { width: 100%; border-collapse: collapse; text-align: right; margin-top: 8px }
+.details-table th { border: 1px solid #e6eef6; padding: 12px; background: #f8fafc; font-weight: 700 }
+.details-table td { border: 1px solid #eef2f6; padding: 12px; vertical-align: top }
+.details-table thead th { background: #f3f6f8 }
+
+.raw-toggle { display:inline-flex; gap:8px; align-items:center; margin-top:8px }
+.raw-area { margin-top: 10px; background: #fafafb; border: 1px solid #eef3f8; padding: 12px; border-radius: 8px; font-size: 13px; color: #374151 }
+
+.signature-cell { white-space: nowrap }
+
+@media (max-width:900px){
+  .details-grid { grid-template-columns: 1fr }
+}

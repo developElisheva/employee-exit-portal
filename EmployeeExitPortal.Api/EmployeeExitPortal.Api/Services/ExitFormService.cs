@@ -1,6 +1,5 @@
 ﻿using EmployeeExitPortal.Api.Data;
-using EmployeeExitPortal.Api.Models;
-using EmployeeExitPortal.Api.DTOs;
+using EmployeeExitPortal.Api.DTO;
 using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeExitPortal.Api.Services
@@ -14,79 +13,104 @@ namespace EmployeeExitPortal.Api.Services
             _context = context;
         }
 
-        // יצירת טופס טיולים חדש לעובד
-        public async Task<ExitForm?> CreateExitFormAsync(int employeeId, DateTime exitDate)
+        // =========================
+        // HR – רשימת טפסים
+        // =========================
+        public async Task<List<ExitFormSummaryDto>> GetForHrAsync()
         {
-            var employee = await _context.Employees.FindAsync(employeeId);
-            if (employee == null)
-                return null;
-
-            var form = new ExitForm
-            {
-                EmployeeId = employeeId,
-                ExitDate = exitDate,
-                Status = "Open",
-                CreatedAt = DateTime.UtcNow
-            };
-
-            _context.ExitForms.Add(form);
-            await _context.SaveChangesAsync();
-
-            return form;
+            return await _context.ExitForms
+                .Include(f => f.Employee)
+                .Include(f => f.Tasks)
+                .Select(f => new ExitFormSummaryDto
+                {
+                    Id = f.Id,
+                    EmployeeName = f.Employee.FullName,
+                    EmployeeTz = f.Employee.Tz,
+                    EndDate = f.ExitDate,
+                    IsCompleted =
+                        f.Tasks.Any() &&
+                        f.Tasks.All(t => t.Status == "Approved")
+                })
+                .ToListAsync();
         }
 
-        // שליפת טופס DTO להצגה
-        public async Task<ExitFormDto?> GetFormDtoAsync(int id)
+        // =========================
+        // טופס בודד לפי הרשאות
+        // =========================
+        public async Task<ExitFormDetailsDto?> GetDetailsAsync(
+            int formId,
+            string role,
+            string? department)
         {
             var form = await _context.ExitForms
                 .Include(f => f.Employee)
                 .Include(f => f.Tasks)
-                .ThenInclude(t => t.ApprovedByUser)
-                .FirstOrDefaultAsync(f => f.Id == id);
+                    .ThenInclude(t => t.ApprovedByUser)
+                .FirstOrDefaultAsync(f => f.Id == formId);
 
             if (form == null)
                 return null;
 
-            return new ExitFormDto
+            var tasks = form.Tasks.AsQueryable();
+
+            // Signer רואה רק את התחום שלו
+            if (role == "Signer" && department != null)
+            {
+                tasks = tasks.Where(t => t.ResponsibleRole == department);
+            }
+
+            return new ExitFormDetailsDto
             {
                 Id = form.Id,
                 EmployeeName = form.Employee.FullName,
-                Unit = form.Employee.Unit,
-                ExitDate = form.ExitDate,
-                Status = form.Status,
-                Tasks = form.Tasks.Select(t => new ExitTaskDto
+                EmployeeTz = form.Employee.Tz,
+                EndDate = form.ExitDate,
+                Tasks = tasks.Select(t => new ExitTaskDto
                 {
-                    Title = t.Title,
-                    ResponsibleRole = t.ResponsibleRole,
-                    Status = t.Status,
-                    Comments = t.Comments
+                    Id = t.Id,
+                    Department = t.ResponsibleRole,
+                    Topic = t.Title,
+                    IsApproved = t.Status == "Approved",
+                    ApprovedBy = t.ApprovedByUser == null
+                    ? null
+                    : t.ApprovedByUser.DisplayName,
+                    ApprovedAt = t.ApprovedAt,
+                    Comment = t.Comments
                 }).ToList()
             };
         }
 
-        // שליפת טפסים לפי עובד מסוים
-        public async Task<List<ExitFormDto>> GetFormsForEmployeeAsync(int employeeId)
+        // =========================
+        // ⭐ טפסים עם המשימות של המחלקה שלי
+        // =========================
+        public async Task<List<ExitFormDetailsDto>> GetForDepartmentAsync(string department)
         {
             var forms = await _context.ExitForms
                 .Include(f => f.Employee)
                 .Include(f => f.Tasks)
-                .Where(f => f.EmployeeId == employeeId)
+                    .ThenInclude(t => t.ApprovedByUser)
+                .Where(f => f.Tasks.Any(t => t.ResponsibleRole == department))
                 .ToListAsync();
 
-            return forms.Select(f => new ExitFormDto
+            return forms.Select(f => new ExitFormDetailsDto
             {
                 Id = f.Id,
                 EmployeeName = f.Employee.FullName,
-                Unit = f.Employee.Unit,
-                ExitDate = f.ExitDate,
-                Status = f.Status,
-                Tasks = f.Tasks.Select(t => new ExitTaskDto
-                {
-                    Title = t.Title,
-                    ResponsibleRole = t.ResponsibleRole,
-                    Status = t.Status,
-                    Comments = t.Comments
-                }).ToList()
+                EmployeeTz = f.Employee.Tz,
+                EndDate = f.ExitDate,
+                Tasks = f.Tasks
+                    .Where(t => t.ResponsibleRole == department)
+                    .Select(t => new ExitTaskDto
+                    {
+                        Id = t.Id,
+                        Department = t.ResponsibleRole,
+                        Topic = t.Title,
+                        IsApproved = t.Status == "Approved",
+                        ApprovedBy = t.ApprovedByUser?.DisplayName,
+                        ApprovedAt = t.ApprovedAt,
+                        Comment = t.Comments
+                    })
+                    .ToList()
             }).ToList();
         }
     }
